@@ -2,7 +2,7 @@ html, body {
     height: 100%;
     margin: 0;
     padding: 0;
-    overflow: hidden;
+    /*overflow: hidden;*/
     font-family: Tahoma;
 }
 
@@ -12,8 +12,12 @@ nav {
     /*justify-content: center; /*Centers item horizontally */
     align-items: center; /*Centers items vertically*/
     width: 100%;
-    background-color: #002366;
+    background-color: #0D1F29;
     height: 11vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
   }
 
   .logo {
@@ -64,41 +68,40 @@ nav {
   }
 /*navbar*/
 
-  #kontakt {
-    display: flex;
-    height: 100%;
-  }
+#welcome {
+  position: relative;
+  display: inline block;
+  overflow: hidden;
+  height: 100vh;
+  padding-top: 11vh;
+}
 
-  #willkommen {
-    color: #002366;
-    font-size: 20px;
-    display: flex;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    width: 50%;
-  }
+#welcome img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
 
-  .box {
-    flex: 1;
-  }
+#welcomeText {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px #000000;
+}
 
-  #btn {
-    display: block;
-    align-items: center;
-    justify-content: center;
-    margin: 10px auto;
-    border-radius: 60px;
-    height: 70px;
-    width: 200px;
-    background-color: #002366;
-    color: white;
-  }
+#vorstellen{
+  padding: 20px;
+}
 
-  /*table, tr, th {
-    border: 1px solid black;
-  }*/
-
-#weltext1 {
-    padding-top: 0px;
+#vorstellenBox {
+  background-color: white;
+  padding: 100px;
+  margin: 100px;
+  border-radius: 20px;
+  border: 4px solid brown;
 }
