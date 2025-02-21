@@ -34,9 +34,59 @@
     </div>
     <div id = "vorstellen">
       <div id="vorstellenBox">
-        <h2>Wir stellen uns vor!</h2>
-        <p>Wir züchten seit 2015 mit viel Liebe und Leidenschaft die Rasse <b>Chihuahua</b>. Unsere Hunde leben mit uns im Haus und sind vollwertige Familienmitglieder. Wir legen großen Wert auf Gesundheit, Wesen und Schönheit unserer Hunde. Unsere Welpen wachsen inmitten unserer Familie auf und werden bestens sozialisiert. Wir sind Mitglied im <b>Österreichischen Kynologenverband</b> und züchten nach dessen Richtlinien. Wir freuen uns, wenn Sie uns besuchen und</p>
+        <div class="text-content">
+          <h2 id="vorstellTitel">Wir stellen uns vor!</h2>
+          <p>Wir sind Romana und Martin - zwei Hundefreunde mit <b>langjähriger Erfahrung</b>, die ihre
+            Leidenschaft für Hunde in eine <b>liebevolle</b> Hobbyzucht verwandelt haben.
+            Nachdem unsere drei Kinder erwachsen geworden sind, haben wir beschlossen, 
+            unseren Traum von einer eigenen <b>Golden Retriever Zucht</b> zu verwirklichen. 
+            Unsere Familie wurde über die Jahre von <b>verschiedenen Hunderassen</b> begleitet –
+            darunter ein <b>Großer Schweizer Sennenhund</b>, ein <b>Altdeutscher Schäferhund</b>, 
+            ein <b>Australian Shepherd</b> und ein <b>Schäfer-Husky-Mischling</b>. 
+            Diese Vielfalt hat uns <b>wertvolle Erfahrungen</b> in der Haltung, 
+            Erziehung und Pflege unterschiedlichster Hunde gesammelt.
+          </p>
+          <button class="learn-more-btn" onclick="expandBox()">Mehr lesen</button>
+        </div>
+        <img id="vorstellBild" src="images/debby6.jpeg" alt="Martin und Romana mit Debby">
       </div>
-      </div>
+    </div>
+
+    <script>
+      function expandBox() {
+        var box = document.getElementById('vorstellenBox');
+        box.classList.toggle('expanded');
+      }
+    </script>
+
+<div id = "Rasse">
+  <div id="RasseBox">
+    <div class="text-content" id="RasseText">
+      <h2 id="RasseTitel">Der Golden Retriever</h2>
+      <p>Der Golden Retriever ist eine der <b>beliebtesten Hunderassen</b> weltweit – 
+        und das aus <b>gutem Grund!</b> Mit seinem <b>freundlichen</b> Wesen, seiner <b>Intelligenz</b> 
+        und seiner <b>Vielseitigkeit</b> begeistert er Familien, Hundesportler und Jäger gleichermaßen.
+      </p>
+      <button class="learn-more-btn" onclick="expandBox()">Mehr lesen</button>
+    </div>
+    <img id="RasseBild" src="images/debby4.jpeg" alt="Debby">
+  </div>
+</div>
+
+<div id = "Zucht">
+  <div id="ZuchtBox">
+    <div class="text-content" id="ZuchtText">
+      <h2 id="ZuchtTitel">Unsere Zuchthündin <b>Daffy vom Wölzerthal</b></h2>
+      <p>Unsere wundervolle Zuchthündin Daffy vom Wölzerthal, liebevoll <b>Debby</b> genannt, 
+        wurde am 11. Januar 2022 bei der <b>erfahrenen Züchterin Beatrix Stocker</b> geboren. 
+        Mit ihrer <b>freundlichen</b> und <b>ausgeglichenen</b> Art verkörpert sie alles, 
+        was einen Golden Retriever ausmacht – ein treuer Begleiter mit <b>Herz und Verstand</b>
+      </p>
+      <button class="learn-more-btn" onclick="expandBox()">Mehr lesen</button>
+    </div>
+    <img id="ZuchtBild" src="images/debby3.jpeg" alt="Debby">
+  </div>
+</div>
+
   </body>
 </html>
