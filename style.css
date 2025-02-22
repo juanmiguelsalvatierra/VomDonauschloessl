@@ -50,6 +50,16 @@ nav {
     display: inline-block;
     padding: 0px 20px;
   }
+
+  .nav_links a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .nav_links a:hover {
+    color: white;
+    text-decoration: underline;
+  }
   
   li a{
     color: white;
@@ -69,15 +79,128 @@ nav {
   }
 /*navbar*/
 
-.Bild {
-  transition: transform 0.3s ease-in-out;
+
+
+.nav-toggle {
+  display: none;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 30px;
+  height: 30px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  margin-left: 20px;
 }
 
-.Bild:hover {
-  transform: scale(1.1);
+.nav-toggle .hamburger {
+  width: 30px;
+  height: 3px;
+  background: white;
+  border-radius: 5px;
+  position: relative;
 }
 
+.nav-toggle .hamburger::before,
+.nav-toggle .hamburger::after {
+  content: '';
+  width: 30px;
+  height: 3px;
+  background: white;
+  border-radius: 5px;
+  position: absolute;
+  transition: all 0.3s;
+}
 
+.nav-toggle .hamburger::before {
+  transform: translateY(-10px);
+}
+
+.nav-toggle .hamburger::after {
+  transform: translateY(10px);
+}
+
+.drawer {
+  height: 100%;
+  width: 180px;
+  position: fixed;
+  z-index: 1001;
+  top: 0;
+  right: -250px;
+  background-color: #0D1F29;
+  overflow-x: hidden;
+  transition: 0.3s;
+  padding-top: 60px;
+}
+
+.drawer.open {
+  right: 0;
+}
+
+.drawer .close-drawer {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.drawer .nav_links {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  padding: 0;
+}
+
+.drawer .nav_links li {
+  padding: 15px 20px;
+}
+
+.drawer .nav_links a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.drawer .nav_links a:hover {
+  color: #eab676;
+}
+
+@media (max-width: 768px) {
+  .desktop-nav {
+    display: none;
+  }
+
+  .mobile-nav {
+    display: flex;
+  }
+
+  .nav-toggle {
+    display: flex;
+  }
+}
+
+@media (min-width: 769px) {
+  .mobile-nav {
+    display: none;
+  }
+}
+
+/* Expandable section styles */
+.hidden {
+  display: none;
+}
+
+#expandableSection {
+  padding: 20px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  margin: 20px;
+  border-radius: 10px;
+}
 
 #welcome {
   position: relative;
@@ -136,7 +259,7 @@ nav {
   padding: 100px;
   margin: 100px;
   border-radius: 50px;
-  border: 7px solid #eab676;
+  border: 4px solid #eab676;
   /*margin-right: 20px;*/
   display: flex;
 }
@@ -208,7 +331,7 @@ nav {
 
 #Rasse {
   background-color: #0D1F29;
-  padding: 50px; /* Add padding to create space around RasseBox */
+  padding: 20px; /* Add padding to create space around RasseBox */
   position: relative; /* Ensure RasseBox is positioned relative to Rasse */
 }
 
@@ -230,7 +353,6 @@ nav {
 }
 
 #RasseBild {
-  flex: 1; /* Allow the image to take up less space */
   max-width: 30%;
   height: auto; /* Maintain the aspect ratio */
   display: block; /* Remove any inline spacing */
@@ -247,7 +369,7 @@ nav {
 
 #Zucht {
   background-color: white;
-  padding: 50px; /* Add padding to create space around RasseBox */
+  padding: 20px; /* Add padding to create space around RasseBox */
   position: relative; /* Ensure RasseBox is positioned relative to Rasse */
 }
 
@@ -268,7 +390,6 @@ nav {
 }
 
 #ZuchtBild {
-  flex: 1; /* Allow the image to take up less space */
   max-width: 30%;
   height: auto; /* Maintain the aspect ratio */
   display: block; /* Remove any inline spacing */
@@ -279,4 +400,92 @@ nav {
 
 #ZuchtText {
   margin-left: 50px; /* Add some space between the text and the image */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Media Queries */
+
+/* For tablets and larger smartphones */
+@media (max-width: 1024px) and (min-width: 481px) {
+  #welcomeText {
+    font-size: 40px;
+  }
+
+  #welcomeSubtext {
+    font-size: 25px;
+  }
+
+  #vorstellenBox {
+    flex-direction: column-reverse;
+    padding: 50px;
+    margin: 50px;
+  }
+
+  .text-content {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  #vorstellBild {
+    max-width: 80%;
+  }
+
+  #RasseBox, #ZuchtBox {
+    flex-direction: column-reverse;
+    padding: 50px;
+    margin: 50px;
+  }
+
+  #RasseBild, #ZuchtBild {
+    max-width: 80%;
+    margin-bottom: 20px;
+  }
+}
+
+/* For smartphones */
+@media (max-width: 480px) {
+  #welcomeText {
+    font-size: 30px;
+  }
+
+  #welcomeSubtext {
+    font-size: 20px;
+  }
+
+  #vorstellenBox {
+    flex-direction: column-reverse; /* Place the image on top */
+    padding: 20px;
+    margin: 20px;
+  }
+
+  .text-content {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  #vorstellBild {
+    max-width: 100%;
+  }
+
+  #RasseBox, #ZuchtBox {
+    flex-direction: column-reverse; /* Place the image on top */
+    padding: 20px;
+    margin: 20px;
+  }
+
+  #RasseBild, #ZuchtBild {
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
 }

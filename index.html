@@ -12,22 +12,47 @@
   <body>
     <header>
         <!--<img class="logo" src="images/logoblack.png" alt="logo">-->
-        <nav>
-            <div class="logo">
-                <img src="images/Logo.png" alt="Logo">
-            </div>
-            <div id="name">
-                <h1>Vom Donauschlössel</h1>
-            </div>
-          <ul class = "nav_links">
-            <li><a href="#welcome">HOME</a></li>
-            <li><a href="#vorstellen">ÜBER UNS</a></li>
-            <li><a href="#Rasse">RASSE</a></li>
-            <li><a href="#Zucht">ZUCHT</a></li>
-            <li><a href="#">KONTAKT</a></li>
+        <nav class="desktop-nav">
+          <div class="logo">
+            <img src="images/Logo.png" alt="Logo">
+          </div>
+          <div id="name">
+            <h1>Vom Donauschlössel</h1>
+          </div>
+          <ul class="nav_links">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="Uns.html">ÜBER UNS</a></li>
+            <li><a href="Rasse.html">RASSE</a></li>
+            <li><a href="Zucht.html">ZUCHT</a></li>
+            <li><a href="Anfrage.html">ANFRAGE</a></li>
+            <li><a href="Partner.html">PARTNER</a></li>
+            <li><a href="Impressum.html">IMPRESSUM</a></li>
           </ul>
         </nav>
+        <nav class="mobile-nav">
+          <div class="logo">
+            <img src="images/Logo.png" alt="Logo">
+          </div>
+          <div id="name">
+            <h1>Vom Donauschlössel</h1>
+          </div>
+          <button class="nav-toggle" aria-label="toggle navigation">
+            <span class="hamburger"></span>
+          </button>
+        </nav>
     </header>
+    <div id="drawer" class="drawer">
+      <button class="close-drawer" aria-label="close navigation">&times;</button>
+      <ul class="nav_links">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="Uns.html">ÜBER UNS</a></li>
+            <li><a href="Rasse.html">RASSE</a></li>
+            <li><a href="Zucht.html">ZUCHT</a></li>
+            <li><a href="Anfrage.html">ANFRAGE</a></li>
+            <li><a href="Partner.html">PARTNER</a></li>
+            <li><a href="Impressum.html">IMPRESSUM</a></li>
+      </ul>
+    </div>
     <!--<img class="logo" src="images/logoblack.png" alt="logo">-->
     <div id = "welcome">
         <div class="overlay"></div>
@@ -50,7 +75,7 @@
             Diese Vielfalt hat uns <b>wertvolle Erfahrungen</b> in der Haltung, 
             Erziehung und Pflege unterschiedlichster Hunde gesammelt.
           </p>
-          <button class="learn-more-btn"><a href="wir.html">Mehr lesen</a></button>
+          <button class="learn-more-btn"><a href="Uns.html">Mehr lesen</a></button>
         </div>
         <img class="Bild" id="vorstellBild" src="images/Debby6.jpg" alt="Martin und Romana mit Debby">
       </div>
