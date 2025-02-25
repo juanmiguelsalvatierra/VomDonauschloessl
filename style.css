@@ -257,7 +257,7 @@ nav {
 #vorstellenBox {
   background-color: white;
   padding: 100px;
-  margin: 100px;
+  margin: 40px;
   border-radius: 50px;
   border: 4px solid #eab676;
   /*margin-right: 20px;*/
@@ -280,10 +280,6 @@ nav {
   object-fit: cover;
 }
 
-
-#vorstellenBox.expanded {
-  height: 1000px; /* Expand the box */
-}
 
 #vorstellTitel {
   color: #eab676;
@@ -339,10 +335,9 @@ nav {
   background-color: white;
   max-height: 70%;
   padding: 100px; /* Reduce padding to make the box smaller */
-  margin: 100px; /* Reduce margin to make the box smaller */
+  margin: 40px; /* Reduce margin to make the box smaller */
   border-radius: 50px;
   border: 4px solid #eab676;
-  margin: 40px;
   display: flex;
   flex-direction: row-reverse;
   align-items: center; /* Center items vertically */
