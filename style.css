@@ -47,6 +47,7 @@ nav {
   }
   
   .nav_links li {
+    margin-top: 10px;
     display: inline-block;
     padding: 0px 20px;
   }
@@ -79,7 +80,19 @@ nav {
   }
 /*navbar*/
 
-
+#kontaktbtn {
+  background-color: #eab676; /* Button background color */
+  border: none; /* Remove borders */
+  color: white; /* White text */
+  padding: 10px 30px; /* Some padding */
+  text-align: center; /* Center the text */
+  text-decoration: none; /* Remove underline */
+  display: inline-block; /* Make the button inline-block */
+  font-size: 16px; /* Increase font size */
+  margin: 0 10px; /* Add some margin */
+  cursor: pointer; /* Add a pointer cursor on hover */
+  border-radius: 5px; /* Rounded corners */
+}
 
 .nav-toggle {
   display: none;
@@ -93,7 +106,7 @@ nav {
   margin-left: 20px;
 }
 
-.nav-toggle .hamburger {
+.nav-toggle .toggle {
   width: 30px;
   height: 3px;
   background: white;
@@ -101,8 +114,8 @@ nav {
   position: relative;
 }
 
-.nav-toggle .hamburger::before,
-.nav-toggle .hamburger::after {
+.nav-toggle .toggle::before,
+.nav-toggle .toggle::after {
   content: '';
   width: 30px;
   height: 3px;
@@ -112,11 +125,11 @@ nav {
   transition: all 0.3s;
 }
 
-.nav-toggle .hamburger::before {
+.nav-toggle .toggle::before {
   transform: translateY(-10px);
 }
 
-.nav-toggle .hamburger::after {
+.nav-toggle .toggle::after {
   transform: translateY(10px);
 }
 
@@ -289,7 +302,7 @@ nav {
   background-color: #eab676; /* Green background */
   border: none; /* Remove borders */
   color: white; /* White text */
-  padding: 15px 32px; /* Some padding */
+  padding: 10px 30px; /* Some padding */
   text-align: center; /* Center the text */
   text-decoration: none; /* Remove underline */
   display: inline-block; /* Make the button inline-block */
@@ -297,8 +310,14 @@ nav {
   margin-top: 20px; /* Add some margin on top */
   cursor: pointer; /* Add a pointer cursor on hover */
   border-radius: 5px; /* Rounded corners */
+  height: auto;
 }
 
+.learn-more-btn a {
+  color: white;
+  text-decoration: none;
+
+}
 #welcomeButton {
   background-color:#eab676;
   border: none;
