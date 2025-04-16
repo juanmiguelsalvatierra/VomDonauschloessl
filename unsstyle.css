@@ -5,6 +5,7 @@ html, body {
     /*overflow: hidden;*/
     font-family: Tahoma;
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 /*navbar*/
@@ -19,6 +20,16 @@ nav {
   top: 0;
   left: 0;
   z-index: 1000;
+}
+
+#UnsBox a {
+  color: #0D1F29;
+  text-decoration: none;
+}
+
+#UnsBox a:hover {
+  color: #eab676;
+  text-decoration: underline;
 }
 
 .logo {
@@ -265,6 +276,9 @@ border-radius: 5px; /* Rounded corners */
     margin-left: 50px; /* Add some space between the text and the image */
   }
 
+#UnsText h3 {
+  margin-bottom: 5px; /* Reduce the space below the <h3> */
+}
 
   #Zucht {
     background-color: white;
@@ -373,4 +387,31 @@ border-radius: 5px; /* Rounded corners */
       max-width: 100%;
       margin-bottom: 20px;
     }
+  }
+
+  #impressum-box {
+    background-color: #0D1F29; /* Dunkelblau */
+    color: white; /* Weißer Text */
+    text-align: center; /* Zentriere den Text */
+    padding: 20px; /* Innenabstand */
+    /*position: fixed; /* Fixiere die Box am unteren Rand */
+    bottom: 0; /* Positioniere die Box am unteren Rand */
+    width: 100%; /* Box soll die gesamte Breite einnehmen */
+    z-index: 1000; /* Stelle sicher, dass die Box über anderen Elementen liegt */
+  }
+  
+  #impressum-box a {
+    color: #eab676; /* Linkfarbe */
+    text-decoration: none; /* Entferne die Unterstreichung */
+  }
+  
+  #impressum-box a:hover {
+    text-decoration: underline; /* Unterstreiche den Link beim Hover */
+  }
+
+  #oekv {
+    height: 7%;
+    width: 7%;
+    padding: 20px; /* Add padding to create space around RasseBox */
+    position: relative; /* Ensure RasseBox is positioned relative to Rasse */
   }

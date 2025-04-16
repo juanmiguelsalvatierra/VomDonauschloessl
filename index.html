@@ -3,10 +3,10 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
     <title>Vom Donauschlössl</title>
     <link rel="stylesheet" type="text/css" href="style.css" />
     <script src="main.js"></script>
+    
   </head>
   
   <body>
@@ -17,17 +17,16 @@
             <img src="images/Logo.png" alt="Logo">
           </div>
           <div id="name">
-            <h1>Vom Donauschlössl</h1>
+            <h1><a href="index.html">Vom Donauschlössl</a></h1>
           </div>
           <ul class="nav_links">
             <li><a href="index.html">HOME</a></li>
-            <li><a href="Uns.html">ÜBER UNS</a></li>
-            <li><a href="Rasse.html">RASSE</a></li>
-            <li><a href="Zucht.html">ZUCHT</a></li>
-            <li><a href="Anfrage.html">ANFRAGE</a></li>
+            <li><a href="Zucht.html">ZUCHTSTÄTTE</a></li>
+            <li><a href="Rasse.html">RASSE UND ZUCHTZIELE</a></li>
+            <li><a href="Wurf.html">WURFANKÜNDIGUNGEN</a></li>
             <li><a href="Partner.html">PARTNER</a></li>
-            <li><a href="Impressum.html">IMPRESSUM</a></li>
-            <li id="kontaktbtn"><a href="mailto:email@email.com">KONTAKT</a></li>
+            <li><a href="Galerie.html">GALERIE</a></li>
+            <li id="kontaktbtn"><a href="mailto: Info.donauschloessl@gmail.com">ANFRAGE</a></li>
           </ul>
         </nav>
         <nav class="mobile-nav">
@@ -35,7 +34,7 @@
             <img src="images/Logo.png" alt="Logo">
           </div>
           <div id="name">
-            <h1>Vom Donauschlössel</h1>
+            <h1>Vom Donauschlössl</h1>
           </div>
           <button class="nav-toggle" aria-label="toggle navigation">
             <span class="toggle"></span>
@@ -45,82 +44,87 @@
     <div id="drawer" class="drawer">
       <button class="close-drawer" aria-label="close navigation">&times;</button>
       <ul class="nav_links">
-            <li><a href="index.html">HOME</a></li>
-            <li><a href="Uns.html">ÜBER UNS</a></li>
-            <li><a href="Rasse.html">RASSE</a></li>
-            <li><a href="Zucht.html">ZUCHT</a></li>
-            <li><a href="Anfrage.html">ANFRAGE</a></li>
-            <li><a href="Partner.html">PARTNER</a></li>
-            <li><a href="Impressum.html">IMPRESSUM</a></li>
-            <li id="kontaktbtn"><a href="mailto:email@email.com">KONTAKT</a></li>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="Zucht.html">ZUCHTSTÄTTE</a></li>
+        <li><a href="Rasse.html">RASSE UND ZUCHTZIELE</a></li>
+        <li><a href="Wurf.html">WURFANKÜNDIGUNGEN</a></li>
+        <li><a href="Partner.html">PARTNER</a></li>
+        <li><a href="Galerie.html">GALERIE</a></li>
+        <li id="kontaktbtn"><a href="mailto: Info.donauschloessl@gmail.com">ANFRAGE</a></li>
       </ul>
     </div>
     <!--<img class="logo" src="images/logoblack.png" alt="logo">-->
     <div id = "welcome">
         <div class="overlay"></div>
         <img src="images/welcomenew.jpg" alt="Romana mit Debby">
-        <div id="welcomeText">Vom Donauschlössel</div>
+        <div id="welcomeText">Vom Donauschlössl</div>
         <div id="welcomeSubtext">Golden Retriever Zucht</div>
+        <div id="welcomeSubSubtext">Ihre erste Adresse für hochwertige, wesensfeste und gesunde Welpen</div>
         <a href="mailto: email@email.com" id="welcomeButton">Jetzt kontaktieren</a>
     </div>
-    <div id = "vorstellen">
-      <div id="vorstellenBox">
-        <div class="text-content">
-          <h2 id="vorstellTitel">Wir stellen uns vor!</h2>
-          <p>Wir sind Romana und Martin - zwei Hundefreunde mit <b>langjähriger Erfahrung</b>, die ihre
-            Leidenschaft für Hunde in eine <b>liebevolle</b> Hobbyzucht verwandelt haben.
-            Nachdem unsere drei Kinder erwachsen geworden sind, haben wir beschlossen, 
-            unseren Traum von einer eigenen <b>Golden Retriever Zucht</b> zu verwirklichen. 
-            Unsere Familie wurde über die Jahre von <b>verschiedenen Hunderassen</b> begleitet –
-            darunter ein <b>Großer Schweizer Sennenhund</b>, ein <b>Altdeutscher Schäferhund</b>, 
-            ein <b>Australian Shepherd</b> und ein <b>Schäfer-Husky-Mischling</b>. 
-            Diese Vielfalt hat uns <b>wertvolle Erfahrungen</b> in der Haltung, 
-            Erziehung und Pflege unterschiedlichster Hunde gesammelt.
-          </p>
-          <!--<button class="learn-more-btn"><a href="Uns.html">Mehr lesen</a></button>-->
-          <a href="Uns.html" class="learn-more-btn">Mehr lesen</a>
-          
-        </div>
-        <img class="Bild" id="vorstellBild" src="images/Debby6.jpg" alt="Martin und Romana mit Debby">
-      </div>
-    </div>
-
-    <script>
-      function expandBox() {
-        var box = document.getElementById('vorstellenBox');
-        box.classList.toggle('expanded');
-      }
-    </script>
+    
 
 <div id = "Rasse">
   <div id="RasseBox">
     <div class="text-content" id="RasseText">
-      <h2 id="RasseTitel">Der Golden Retriever</h2>
-      <p>Der Golden Retriever ist eine der <b>beliebtesten Hunderassen</b> weltweit – 
-        und das aus <b>gutem Grund!</b> Mit seinem <b>freundlichen</b> Wesen, seiner <b>Intelligenz</b> 
-        und seiner <b>Vielseitigkeit</b> begeistert er Familien, Hundesportler und Jäger gleichermaßen.
+      <h2 id="RasseTitel">Wir stellen uns vor</h2>
+      <p>
+        Wir, Romana und Martin, haben unser Wissen und unsere Begeisterung zur Rasse der
+        Golden Retriever in einer verantwortungsvollen und liebevollen Zucht umgesetzt.
+        Unsere Selektion bei den Zuchttieren unterliegt penibelsten Kriterien und unsere
+        Welpen werden mit größter Sorgfalt und Hingabe aufgezogen, wobei wir
+        besonderen Wert auf Gesundheit, Wesen und Eignung für den
+        Assistenzhundeeinsatz legen.
       </p>
       <!--<button class="learn-more-btn" onclick="expandBox()">Mehr lesen</button>-->
-      <a href="Rasse.html" class="learn-more-btn">Mehr lesen</a>
     </div>
-    <img class="Bild" id="RasseBild" src="images/Debby4.jpg" alt="Debby">
+    <img class="Bild" id="RasseBild" src="images/Debby6.jpg" alt="Debby">
   </div>
 </div>
 
 <div id = "Zucht">
   <div id="ZuchtBox">
     <div class="text-content" id="ZuchtText">
-      <h2 id="ZuchtTitel">Unsere Zuchthündin <b>Daffy vom Wölzerthal</b></h2>
-      <p>Unsere wundervolle Zuchthündin Daffy vom Wölzerthal, liebevoll <b>Debby</b> genannt, 
-        wurde am 11. Januar 2022 bei der <b>erfahrenen Züchterin Beatrix Stocker</b> geboren. 
-        Mit ihrer <b>freundlichen</b> und <b>ausgeglichenen</b> Art verkörpert sie alles, 
-        was einen Golden Retriever ausmacht – ein treuer Begleiter mit <b>Herz und Verstand</b>
+      <h2 id="ZuchtTitel">Warum ein Golden Retriever?</h2>
+      <p>
+        Wenn Sie einen treuen Begleiter suchen, der Freundlichkeit, Intelligenz und Arbeitsfreude vereint, 
+        ist der Golden Retriever die perfekte Wahl. Er passt sowohl in aktive Familien als auch zu Einzelpersonen, 
+        die einen zuverlässigen und liebevollen Gefährten an ihrer Seite haben möchten.<br><br>
+
+        Wir freuen uns, Ihnen mehr über diese wundervolle Rasse zu erzählen und Ihnen vielleicht schon bald
+         Ihren neuen vierbeinigen Freund vorstellen zu dürfen!
+
       </p>
       <!--<button class="learn-more-btn" onclick="expandBox()">Mehr lesen</button>-->
-      <a href="Zucht.html" class="learn-more-btn">Mehr lesen</a>
     </div>
     <img class="Bild" id="ZuchtBild" src="images/Debby3.jpg" alt="Debby">
   </div>
+</div>
+
+
+<div id = "Rasse">
+  <div id="RasseBox">
+    <div class="text-content" id="RasseText">
+      <h2 id="RasseTitel">Unsere Zucht</h2>
+      <p>Auf unserer Seite finden Sie alle Informationen über unsere Zucht, aktuelle und
+        geplante Würfe sowie wertvolle Tipps zur Aufzucht und Pflege unserer
+        liebenswerten Welpen. Wir laden Sie herzlich ein, sich umzusehen und mehr über
+        unsere Arbeit zu erfahren. <br><br>
+        Wir freuen uns darauf, Sie kennenzulernen und Ihnen zu einem neuen, flauschigen
+        Familienmitglied zu verhelfen, das Ihr Leben bereichern wird.
+      </p>
+      <!--<button class="learn-more-btn" onclick="expandBox()">Mehr lesen</button>-->
+    </div>
+    <img class="Bild" id="RasseBild" src="images/debby.jpg" alt="Debby">
+  </div>
+</div>
+
+
+<div id="impressum-box">
+  <p>© 2025 Vom Donauschlössl | <a href="Impressum.html">Impressum</a></p>
+  <img id="oekv" src="images/oekv.png" alt="Logo">
+  <img id="oekv" src="images/orc.png" alt="Logo">
+  <img id="oekv" src="images/fci.png" alt="Logo">
 </div>
 
   </body>
