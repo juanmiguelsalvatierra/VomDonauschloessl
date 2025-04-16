@@ -1,119 +1,111 @@
 html, body {
-    height: 100%; /* Ensure the page takes up the full height of the viewport */
-    margin: 0; /* Remove default margin */
-    padding: 0; /* Remove default padding */
-    font-family: Tahoma;
-    scroll-behavior: smooth;
-    overflow-x: hidden; /* Prevent horizontal scrolling */
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  /*overflow: hidden;*/
+  font-family: Tahoma;
+  scroll-behavior: smooth;
+  overflow-x:hidden
 }
 
-body {
-    margin: 0; /* Remove default margin */
-    padding-top: 80px; /* Add padding equal to the height of the navbar */
-    overflow-y: auto;
-    min-height: 100vh;
+#homebutton {
+  text-decoration: none;
+  color: white;
 }
 
-/*navbar*/
 nav {
-    display: flex;
-    /*justify-content: center; /*Centers item horizontally */
-    align-items: center; /*Centers items vertically*/
-    width: 100%;
-    background-color: #0D1F29;
-    height: 11vh;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 1000;
-    flex-wrap: wrap; /* Allow items to wrap if they exceed the container width */
-  }
+  display: flex;
+  /*justify-content: center; /*Centers item horizontally */
+  align-items: center; /*Centers items vertically*/
+  width: 100%;
+  background-color: #0D1F29;
+  height: 11vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
 
-  .logo {
-    height: 100%; /* Make the logo container take the full height of the navbar */
-    display:flex;
-    align-items: center;
-    margin-left: 1%;   
-  }
+.logo {
+  height: 100%; /* Make the logo container take the full height of the navbar */
+  display:flex;
+  align-items: center;
+  margin-left: 1%;   
+}
 
-  .logo img {
-    height: 80%;
-    width: auto;
-  }
+.logo img {
+  height: 80%;
+  width: auto;
+}
 
-  #name{
-    color: white;
-    font-size: 20px;
-    margin-left: 10px;
-  }
+#name{
+  color: white;
+  font-size: 20px;
+  margin-left: 10px;
+}
 
-  .nav_links {
-    display: flex; /*Makes the links align in a row*/
-    list-style: none;
-    float: right;
-    margin-left: auto;
-  }
-  
-  .nav_links li {
-    margin-top: 10px;
-    display: inline-block;
-    padding: 0px 20px;
-  }
+.nav_links {
+  display: flex; /*Makes the links align in a row*/
+  list-style: none;
+  /*float: right;
+  margin-left: auto;*/
+  margin: 0;
+  padding: 0;
+}
 
-  .nav_links a {
-    color: white;
-    text-decoration: none;
-  }
-  
-  .nav_links a:hover {
-    color: white;
-    text-decoration: underline;
-  }
-  
-  li a{
-    color: white;
-    text-decoration: none;
-  }
+.nav_links li {
+  margin-top: 10px;
+  display: inline-block;
+  padding: 0px 20px;
+}
 
-  li a:hover{
-    color: white;
-    text-decoration: underline;
-  }
+.nav_links a {
+  color: white;
+  text-decoration: none;
+}
 
-  header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    /*background-color: #2f3238;*/
-    position: fixed; /* Keeps the navbar fixed at the top */
-    top: 0;
-    width: 100%;
-    z-index: 1000; /* Ensures the navbar is above other content */
-  }
+.nav_links a:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+li a{
+  color: white;
+  text-decoration: none;
+}
+
+li a:hover{
+  color: white;
+  text-decoration: underline;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /*background-color: #2f3238;*/
+}
 /*navbar*/
 
 #impressum-box {
-    background-color: #0D1F29; /* Dunkelblau */
-    color: white; /* Weißer Text */
-    text-align: center; /* Zentriere den Text */
-    padding: 20px; /* Innenabstand */
-    position: relative; /* Ensure it stays within the normal flow */
-    bottom: 0; /* Align it to the bottom of the content */
-    width: 100%; /* Prevent it from exceeding the viewport width */
-    z-index: 1000; /* Stelle sicher, dass die Box über anderen Elementen liegt */
-    margin: 0; /* Remove any default margins */
-    flex-wrap: wrap; /* Allow items to wrap if they exceed the container width */
-    flex-shrink: 0;
-  }
-  
-  #impressum-box a {
-    color: #eab676; /* Linkfarbe */
-    text-decoration: none; /* Entferne die Unterstreichung */
-  }
-  
-  #impressum-box a:hover {
-    text-decoration: underline; /* Unterstreiche den Link beim Hover */
-  }
+background-color: #0D1F29; /* Dunkelblau */
+color: white; /* Weißer Text */
+text-align: center; /* Zentriere den Text */
+padding: 20px; /* Innenabstand */
+/*position: fixed; /* Fixiere die Box am unteren Rand */
+bottom: 0; /* Positioniere die Box am unteren Rand */
+width: 100%; /* Box soll die gesamte Breite einnehmen */
+z-index: 1000; /* Stelle sicher, dass die Box über anderen Elementen liegt */
+}
+
+#impressum-box a {
+color: #eab676; /* Linkfarbe */
+text-decoration: none; /* Entferne die Unterstreichung */
+}
+
+#impressum-box a:hover {
+text-decoration: underline; /* Unterstreiche den Link beim Hover */
+}
 
 
 #kontaktbtn {
@@ -131,7 +123,7 @@ nav {
 }
 
 .nav-toggle {
-  display: none;
+  display: flex;
   flex-direction: column;
   justify-content: space-around;
   width: 30px;
@@ -140,6 +132,10 @@ nav {
   border: none;
   cursor: pointer;
   margin-left: 20px;
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .nav-toggle .toggle {
@@ -170,29 +166,30 @@ nav {
 }
 
 .drawer {
-  position: fixed;
-  top: 0;
-  right: -100%; /* Initially hidden off-screen */
-  width: 80%;
   height: 100%;
+  width: 250px;
+  position: fixed;
+  z-index: 1001;
+  top: 0;
+  right: -250px;
   background-color: #0D1F29;
-  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
-  transition: right 0.3s ease; /* Smooth transition */
-  z-index: 1000;
+  overflow-x: hidden;
+  transition: 0.3s;
+  padding-top: 60px;
 }
 
 .drawer.open {
-  right: 0; /* Slide into view */
+  right: 0;
 }
 
-.close-drawer {
+.drawer .close-drawer {
   position: absolute;
   top: 10px;
-  right: 20px;
-  font-size: 2rem;
-  color: white;
+  right: 10px;
   background: none;
   border: none;
+  color: white;
+  font-size: 30px;
   cursor: pointer;
 }
 
@@ -240,224 +237,7 @@ nav {
 /* Expandable section styles */
 
 
-#expandableSection {
-  padding: 20px;
-  background-color: #f9f9f9;
-  border: 1px solid #ddd;
-  margin: 20px;
-  border-radius: 10px;
-}
 
-#welcome {
-  position: relative;
-  display: inline block;
-  overflow: hidden;
-  height: 100vh;
-  padding-top: 11vh;
-  
-}
-
-#welcome img{
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-}
-
-#welcome .overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.5); /* Dark semi-transparent background */
-  z-index: 1;
-}
-
-#welcomeText {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  color: white;
-  font-size: 50px;
-  font-weight: bold;
-  transform: translate(-50%, -5%);
-  z-index: 2;
-}
-
-#welcomeSubtext {
-  position: absolute;
-  top: 60%;
-  left: 50%;
-  color: white;
-  font-size: 30px;
-  font-weight: bold;
-  transform: translate(-50%, -50%);
-  z-index: 2;
-}
-
-#welcomeSubSubtext {
-  position: absolute;
-  top: 60%;
-  left: 50%;
-  color: white;
-  font-size: 20px;
-  transform: translate(-50%, 150%);
-  z-index: 2;
-}
-
-#vorstellen{
-  padding: 20px;
-}
-
-#vorstellenBox {
-  background-color: white;
-  padding: 100px;
-  margin: 40px;
-  border-radius: 50px;
-  border: 4px solid #eab676;
-  /*margin-right: 20px;*/
-  display: flex;
-}
-
-.text-content {
-  flex:2; /* Allow the text content to take up available space */
-  margin-right: 30px; /* Add some space between the text and the image */
-  line-height: 2.5; /* Increase the line height */
-  font-family: Tahoma;
-  font-size: 20px;
-}
-
-#vorstellBild {
-  max-width: 40%;
-  max-height: 30%; /* Maintain the aspect ratio */
-  display: block; /* Remove any inline spacing */
-  border-radius: 50px;
-  object-fit: cover;
-}
-
-
-#vorstellTitel {
-  color: #eab676;
-}
-
-.learn-more-btn {
-  background-color: #eab676; /* Green background */
-  border: none; /* Remove borders */
-  color: white; /* White text */
-  padding: 10px 30px; /* Some padding */
-  text-align: center; /* Center the text */
-  text-decoration: none; /* Remove underline */
-  display: inline-block; /* Make the button inline-block */
-  font-size: 16px; /* Increase font size */
-  margin-top: 20px; /* Add some margin on top */
-  cursor: pointer; /* Add a pointer cursor on hover */
-  border-radius: 5px; /* Rounded corners */
-  height: auto;
-}
-
-.learn-more-btn a {
-  color: white;
-  text-decoration: none;
-
-}
-#welcomeButton {
-  background-color:#eab676;
-  border: none;
-  color: white;
-  padding: 15px 32px; /* Some padding */
-  text-align: center; /* Center the text */
-  text-decoration: none; /* Remove underline */
-  display: inline-block; /* Make the button inline-block */
-  font-size: 20px; /* Increase font size */
-  margin-top: 20px; /* Add some margin on top */
-  cursor: pointer; /* Add a pointer cursor on hover */
-  border-radius: 5px; /* Rounded corners */
-  top: 70%;
-  left: 50%;
-  transform: translate(-50%, 50%);
-  position: absolute;
-  z-index: 3;
-}
-
-#welcomeButton:hover{
-  background-color: #e28743;
-}
-.learn-more-btn:hover {
-  background-color: #e28743;
-}
-
-#Rasse {
-  background-color: #0D1F29;
-  padding: 20px; /* Add padding to create space around RasseBox */
-  position: relative; /* Ensure RasseBox is positioned relative to Rasse */
-}
-
-#RasseBox {
-  background-color: white;
-  max-height: 70%;
-  padding: 100px; /* Reduce padding to make the box smaller */
-  margin: 40px; /* Reduce margin to make the box smaller */
-  border-radius: 50px;
-  border: 4px solid #eab676;
-  display: flex;
-  flex-direction: row-reverse;
-  align-items: center; /* Center items vertically */
-}
-
-#RasseTitel {
-  color: #eab676;
-}
-
-#RasseBild {
-  max-width: 40%;
-  height: auto; /* Maintain the aspect ratio */
-  display: block; /* Remove any inline spacing */
-  border-radius: 50px;
-  object-fit: cover;
-  margin-right: 20px; /* Add some space between the image and the text */
-}
-
-#RasseText {
-  margin-left: 50px; /* Add some space between the text and the image */
-}
-
-
-
-#Zucht {
-  background-color: white;
-  padding: 20px; /* Add padding to create space around RasseBox */
-  position: relative; /* Ensure RasseBox is positioned relative to Rasse */
-}
-
-#ZuchtBox {
-  background-color: white;
-  max-height: 70%;
-  padding: 100px; /* Reduce padding to make the box smaller */
-  margin: 100px; /* Reduce margin to make the box smaller */
-  border-radius: 50px;
-  border: 4px solid #eab676;
-  margin: 40px;
-  display: flex;
-  align-items: center; /* Center items vertically */
-}
-
-#ZuchtTitel {
-  color: #eab676;
-}
-
-#ZuchtBild {
-  max-width: 30%;
-  height: auto; /* Maintain the aspect ratio */
-  display: block; /* Remove any inline spacing */
-  border-radius: 50px;
-  object-fit: cover;
-  margin-right: 20px; /* Add some space between the image and the text */
-}
-
-#ZuchtText {
-  margin-left: 50px; /* Add some space between the text and the image */
-}
 
 /* Gallery styles */
 .gallery-grid {
@@ -518,82 +298,80 @@ nav {
 }
 
 .hidden {
-  display: none; !important;
+  display: none;
 }
 
 /* Media Queries */
 
 /* For tablets and larger smartphones */
 @media (max-width: 1024px) and (min-width: 481px) {
-  #welcomeText {
-    font-size: 40px;
-  }
-
-  #welcomeSubtext {
-    font-size: 25px;
-  }
-
-  #vorstellenBox {
-    flex-direction: column-reverse;
-    padding: 50px;
-    margin: 50px;
-  }
-
-  .text-content {
-    margin-right: 0;
-    margin-bottom: 20px;
-  }
-
-  #vorstellBild {
-    max-width: 80%;
-  }
-
-  #RasseBox, #ZuchtBox {
-    flex-direction: column-reverse;
-    padding: 50px;
-    margin: 50px;
-  }
-
-  #RasseBild, #ZuchtBild {
-    max-width: 80%;
-    margin-bottom: 20px;
+  #impressum-box img {
+    width: 70px; /* oder mehr, je nachdem wie groß du willst */
+    height: auto;
+    margin: 5px;
   }
 }
 
 /* For smartphones */
 @media (max-width: 480px) {
-  #welcomeText {
-    font-size: 30px;
+  #impressum-box img {
+    width: 70px; /* oder mehr, je nachdem wie groß du willst */
+    height: auto;
+    margin: 5px;
+  }
+}
+
+/* Show the toggle button for resolutions higher than 800px */
+@media (max-width: 800px) {
+  .nav-toggle {
+    display: flex; /* Ensure the toggle button is visible */
   }
 
-  #welcomeSubtext {
-    font-size: 20px;
+  .nav_links {
+    display: none; /* Hide the regular navigation links */
   }
 
-  #vorstellenBox {
-    flex-direction: column-reverse; /* Place the image on top */
+  .nav_links.open {
+    display: flex; /* Show the navigation links when the toggle is active */
+    flex-direction: column;
+    position: absolute;
+    top: 11vh; /* Position below the navbar */
+    right: 0;
+    background-color: #0D1F29;
+    width: 100%;
     padding: 20px;
-    margin: 20px;
+    z-index: 1000;
+  }
+}
+
+/* Show regular navigation links for desktop resolutions */
+@media (min-width: 801px) {
+  .nav_links {
+    display: flex; /* Show the regular navigation links */
+    flex-direction: row;
+    margin-left: auto;
   }
 
-  .text-content {
-    margin-right: 0;
-    margin-bottom: 20px;
+  .nav-toggle {
+    display: none;
   }
 
-  #vorstellBild {
-    max-width: 100%;
+  .nav_links a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
   }
 
-  #RasseBox, #ZuchtBox {
-    flex-direction: column-reverse; /* Place the image on top */
-    padding: 20px;
-    margin: 20px;
+  .nav_links a:hover {
+    color: #eab676;
   }
 
-  #RasseBild, #ZuchtBild {
-    max-width: 100%;
-    margin-bottom: 20px;
+  .desktop-nav {
+    display: flex !important;
+  }
+  
+  .mobile-nav {
+    display: none !important;
   }
 }
 

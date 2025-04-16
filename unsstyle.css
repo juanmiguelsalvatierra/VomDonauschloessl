@@ -7,6 +7,10 @@ html, body {
     scroll-behavior: smooth;
     overflow-x: hidden;
 }
+#homebutton {
+  text-decoration: none;
+  color: white;
+}
 
 /*navbar*/
 nav {
@@ -117,6 +121,10 @@ border-radius: 5px; /* Rounded corners */
   border: none;
   cursor: pointer;
   margin-left: 20px;
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .nav-toggle .toggle {
@@ -148,7 +156,7 @@ border-radius: 5px; /* Rounded corners */
 
 .drawer {
   height: 100%;
-  width: 180px;
+  width: 250px;
   position: fixed;
   z-index: 1001;
   top: 0;
@@ -195,23 +203,70 @@ border-radius: 5px; /* Rounded corners */
   color: #eab676;
 }
 
-@media (max-width: 768px) {
-  .desktop-nav {
-    display: none;
-  }
 
-  .mobile-nav {
-    display: flex;
-  }
-
+/* Show the toggle button for resolutions higher than 800px */
+@media (max-width: 800px) {
   .nav-toggle {
-    display: flex;
+    display: flex; /* Ensure the toggle button is visible */
+  }
+
+  .nav_links {
+    display: none; /* Hide the regular navigation links */
+  }
+
+  .nav_links.open {
+    display: flex; /* Show the navigation links when the toggle is active */
+    flex-direction: column;
+    position: absolute;
+    top: 11vh; /* Position below the navbar */
+    right: 0;
+    background-color: #0D1F29;
+    width: 100%;
+    padding: 20px;
+    z-index: 1000;
   }
 }
 
-@media (min-width: 769px) {
-  .mobile-nav {
+/* Default: Hide the line break */
+.mobile-break {
+  display: none;
+}
+
+/* Show the line break on mobile resolutions */
+@media (max-width: 768px) {
+  .mobile-break {
+    display: inline;
+  }
+}
+
+/* Show regular navigation links for desktop resolutions */
+@media (min-width: 801px) {
+  .nav_links {
+    display: flex; /* Show the regular navigation links */
+    flex-direction: row;
+    margin-left: auto;
+  }
+
+  .nav-toggle {
     display: none;
+  }
+
+  .nav_links a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+  }
+
+  .nav_links a:hover {
+    color: #eab676;
+  }
+
+  .desktop-nav {
+    display: flex !important;
+  }
+  
+  .mobile-nav {
+    display: none !important;
   }
 }
 
@@ -350,6 +405,12 @@ border-radius: 5px; /* Rounded corners */
       max-width: 80%;
       margin-bottom: 20px;
     }
+
+    #impressum-box img {
+      width: 70px; /* oder mehr, je nachdem wie groß du willst */
+      height: auto;
+      margin: 5px;
+    }
   }
 
 /* For smartphones */
@@ -365,7 +426,7 @@ border-radius: 5px; /* Rounded corners */
     #vorstellenBox {
       flex-direction: column-reverse; /* Place the image on top */
       padding: 20px;
-      margin: 20px;
+      margin: 2px;
     }
   
     .text-content {
@@ -380,12 +441,22 @@ border-radius: 5px; /* Rounded corners */
     #UnsBox, #ZuchtBox {
       flex-direction: column-reverse; /* Place the image on top */
       padding: 20px;
-      margin: 20px;
+      margin: 2px;
     }
   
     #UnsBild, #ZuchtBild {
       max-width: 100%;
       margin-bottom: 20px;
+    }
+
+    #Uns {
+      margin-top: 11vh;
+    }
+
+    #impressum-box img {
+      width: 70px; /* oder mehr, je nachdem wie groß du willst */
+      height: auto;
+      margin: 5px;
     }
   }
 
