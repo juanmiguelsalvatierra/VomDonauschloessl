@@ -12,6 +12,10 @@ html, body {
   color: white;
 }
 
+
+h3{
+  color: #eab676;
+}
 /*navbar*/
 nav {
   display: flex;
