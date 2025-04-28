@@ -3,10 +3,19 @@ html, body {
     margin: 0;
     padding: 0;
     /*overflow: hidden;*/
-    font-family: Tahoma;
+    font-family: "Montserrat", sans-serif;
     scroll-behavior: smooth;
     overflow-x:hidden
 }
+
+
+.montserrat-<uniquifier> {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
 
 #homebutton {
   text-decoration: none;
@@ -420,7 +429,7 @@ nav {
   flex:2; /* Allow the text content to take up available space */
   margin-right: 30px; /* Add some space between the text and the image */
   line-height: 2.5; /* Increase the line height */
-  font-family: Tahoma;
+  font-family: "Montserrat", sans-serif;
   font-size: 20px;
 }
 

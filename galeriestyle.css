@@ -3,9 +3,17 @@ html, body {
   margin: 0;
   padding: 0;
   /*overflow: hidden;*/
-  font-family: Tahoma;
+  font-family: "Montserrat", sans-serif;
   scroll-behavior: smooth;
   overflow-x:hidden
+}
+
+
+.montserrat-<uniquifier> {
+font-family: "Montserrat", sans-serif;
+font-optical-sizing: auto;
+font-weight: <weight>;
+font-style: normal;
 }
 
 #homebutton {

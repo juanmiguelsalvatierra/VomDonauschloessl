@@ -1,11 +1,19 @@
 html, body {
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    /*overflow: hidden;*/
-    font-family: Tahoma;
-    scroll-behavior: smooth;
-    overflow-x: hidden;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  /*overflow: hidden;*/
+  font-family: "Montserrat", sans-serif;
+  scroll-behavior: smooth;
+  overflow-x:hidden
+}
+
+
+.montserrat-<uniquifier> {
+font-family: "Montserrat", sans-serif;
+font-optical-sizing: auto;
+font-weight: <weight>;
+font-style: normal;
 }
 #homebutton {
   text-decoration: none;
@@ -287,14 +295,21 @@ border-radius: 5px; /* Rounded corners */
   border-radius: 10px;
 }
 
-
-
+.mobile-break {
+  display: none;
+}
+/* Show the line break on mobile resolutions */
+@media (max-width: 768px) {
+  .mobile-break {
+    display: inline;
+  }
+}
 
 .text-content {
     flex:2; /* Allow the text content to take up available space */
     margin-right: 30px; /* Add some space between the text and the image */
     line-height: 2.5; /* Increase the line height */
-    font-family: Tahoma;
+    font-family: "Montserrat", sans-serif;
     font-size: 20px;
   }
 
