@@ -330,6 +330,20 @@ text-decoration: underline; /* Unterstreiche den Link beim Hover */
     height: auto;
     margin: 5px;
   }
+  #impressum-box {
+    background-color: #0D1F29; /* Dunkelblau */
+    color: white; /* Weißer Text */
+    text-align: center; /* Zentriere den Text */
+    padding: 1px; /* Innenabstand */
+    padding-top: 10px;
+    /*position: fixed; /* Fixiere die Box am unteren Rand */
+    bottom: 0; /* Positioniere die Box am unteren Rand */
+    width: 100%; /* Box soll die gesamte Breite einnehmen */
+    z-index: 1000; /* Stelle sicher, dass die Box über anderen Elementen liegt */
+    flex-direction: column;
+    align-items: center; /* Center child elements horizontally */
+    margin: 0; /* Remove any default margins */
+  }
 }
 
 /* Show the toggle button for resolutions higher than 800px */

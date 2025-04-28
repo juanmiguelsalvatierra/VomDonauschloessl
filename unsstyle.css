@@ -501,7 +501,8 @@ border-radius: 5px; /* Rounded corners */
     background-color: #0D1F29; /* Dunkelblau */
     color: white; /* Weißer Text */
     text-align: center; /* Zentriere den Text */
-    padding: 10px; /* Innenabstand */
+    padding: 1px; /* Innenabstand */
+    padding-top: 10px;
     /*position: fixed; /* Fixiere die Box am unteren Rand */
     bottom: 0; /* Positioniere die Box am unteren Rand */
     width: 100%; /* Box soll die gesamte Breite einnehmen */
