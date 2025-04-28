@@ -136,7 +136,7 @@ border-radius: 5px; /* Rounded corners */
   cursor: pointer;
   margin-left: 20px;
   position: absolute;
-  right: 20px;
+  right: 30px;
   top: 50%;
   transform: translateY(-50%);
 }
