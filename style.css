@@ -501,13 +501,15 @@ nav {
 #RasseBox {
   background-color: white;
   max-height: 70%;
-  padding: 100px; /* Reduce padding to make the box smaller */
-  margin: 20px; /* Reduce margin to make the box smaller */
+  padding: 50px; /* Reduce padding to make the box smaller */
+  margin: 20px auto; /* Reduce margin to make the box smaller */
   border-radius: 50px;
   border: 4px solid #eab676;
   display: flex;
   flex-direction: row-reverse;
   align-items: center; /* Center items vertically */
+  justify-content: center; /* Center items vertically */
+  text-align: center; /* Center-align text */
 }
 
 #RasseTitel {
@@ -545,6 +547,8 @@ nav {
   margin: 40px;
   display: flex;
   align-items: center; /* Center items vertically */
+  justify-content: center; /* Center items vertically */
+  text-align: center; /* Center-align text */
 }
 
 #ZuchtTitel {
@@ -657,9 +661,32 @@ nav {
     margin: 2px;
   }
 
+  #RasseText {
+    margin-left: 0px; /* Add some space between the text and the image */
+  }
+
+  #ZuchtText {
+    margin-left: 0px; /* Add some space between the text and the image */
+  }
+
+  #impressum-box {
+    background-color: #0D1F29; /* Dunkelblau */
+    color: white; /* Weißer Text */
+    text-align: center; /* Zentriere den Text */
+    padding: 10px; /* Innenabstand */
+    /*position: fixed; /* Fixiere die Box am unteren Rand */
+    bottom: 0; /* Positioniere die Box am unteren Rand */
+    width: 100%; /* Box soll die gesamte Breite einnehmen */
+    z-index: 1000; /* Stelle sicher, dass die Box über anderen Elementen liegt */
+    flex-direction: column;
+    align-items: center; /* Center child elements horizontally */
+    margin: 0; /* Remove any default margins */
+  }
+
   #RasseBild, #ZuchtBild {
     max-width: 100%;
     margin-bottom: 20px;
+    margin-right: 0;
   }
   #impressum-box img {
     width: 70px; /* oder mehr, je nachdem wie groß du willst */
