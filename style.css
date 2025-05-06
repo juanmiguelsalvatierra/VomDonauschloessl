@@ -225,10 +225,19 @@ nav {
   font-size: 18px;
 }
 
-.drawer .nav_links a:hover {
+.drawer .nav_links .links:hover {
   color: #eab676;
 }
 
+#kontaktbtn {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+#kontaktbtn:hover {
+  color: white;
+}
 
 /* Show the toggle button for resolutions higher than 800px */
 @media (max-width: 800px) {
@@ -254,7 +263,7 @@ nav {
 }
 
 /* Show regular navigation links for desktop resolutions */
-@media (min-width: 801px) {
+@media (min-width: 1441px) {
   .nav_links {
     display: flex; /* Show the regular navigation links */
     flex-direction: row;
@@ -271,7 +280,7 @@ nav {
     font-size: 16px;
   }
 
-  .nav_links a:hover {
+  .nav_links .links:hover {
     color: #eab676;
   }
 

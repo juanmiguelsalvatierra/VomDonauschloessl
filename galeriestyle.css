@@ -221,7 +221,7 @@ text-decoration: underline; /* Unterstreiche den Link beim Hover */
   font-size: 18px;
 }
 
-.drawer .nav_links a:hover {
+.drawer .nav_links .links:hover {
   color: #eab676;
 }
 
@@ -239,11 +239,11 @@ text-decoration: underline; /* Unterstreiche den Link beim Hover */
   }
 }
 
-@media (min-width: 769px) {
+/*@media (min-width: 769px) {
   .mobile-nav {
     display: none;
   }
-}
+}*/
 
 /* Expandable section styles */
 
@@ -346,8 +346,10 @@ text-decoration: underline; /* Unterstreiche den Link beim Hover */
   }
 }
 
+
+
 /* Show the toggle button for resolutions higher than 800px */
-@media (max-width: 800px) {
+@media (max-width: 1440px) {
   .nav-toggle {
     display: flex; /* Ensure the toggle button is visible */
   }
@@ -370,7 +372,7 @@ text-decoration: underline; /* Unterstreiche den Link beim Hover */
 }
 
 /* Show regular navigation links for desktop resolutions */
-@media (min-width: 801px) {
+@media (min-width: 1441px) {
   .nav_links {
     display: flex; /* Show the regular navigation links */
     flex-direction: row;
@@ -387,7 +389,7 @@ text-decoration: underline; /* Unterstreiche den Link beim Hover */
     font-size: 16px;
   }
 
-  .nav_links a:hover {
+  .nav_links .links:hover {
     color: #eab676;
   }
 

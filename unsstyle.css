@@ -213,13 +213,13 @@ border-radius: 5px; /* Rounded corners */
   font-size: 18px;
 }
 
-.drawer .nav_links a:hover {
+.drawer .nav_links .links:hover {
   color: #eab676;
 }
 
 
 /* Show the toggle button for resolutions higher than 800px */
-@media (max-width: 800px) {
+@media (max-width: 1440px) {
   .nav-toggle {
     display: flex; /* Ensure the toggle button is visible */
   }
@@ -253,8 +253,9 @@ border-radius: 5px; /* Rounded corners */
   }
 }
 
+
 /* Show regular navigation links for desktop resolutions */
-@media (min-width: 801px) {
+@media (min-width: 1441px) {
   .nav_links {
     display: flex; /* Show the regular navigation links */
     flex-direction: row;
@@ -271,7 +272,7 @@ border-radius: 5px; /* Rounded corners */
     font-size: 16px;
   }
 
-  .nav_links a:hover {
+  .nav_links .links:hover {
     color: #eab676;
   }
 
@@ -283,6 +284,7 @@ border-radius: 5px; /* Rounded corners */
     display: none !important;
   }
 }
+
 
 /* Expandable section styles */
 .hidden {
