@@ -235,9 +235,6 @@ nav {
   font-size: 18px;
 }
 
-#kontaktbtn:hover {
-  color: white;
-}
 
 /* Show the toggle button for resolutions higher than 800px */
 @media (max-width: 800px) {
