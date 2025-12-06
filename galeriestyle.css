@@ -9,12 +9,6 @@ html, body {
 }
 
 
-.montserrat-<uniquifier> {
-font-family: "Montserrat", sans-serif;
-font-optical-sizing: auto;
-font-weight: <weight>;
-font-style: normal;
-}
 
 #homebutton {
   text-decoration: none;
@@ -48,7 +42,7 @@ nav {
 
 #name{
   color: white;
-  font-size: 20px;
+  font-size: 16px;
   margin-left: 10px;
 }
 

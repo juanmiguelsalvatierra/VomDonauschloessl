@@ -9,17 +9,10 @@ html, body {
 }
 
 
-.montserrat-<uniquifier> {
-  font-family: "Montserrat", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: <weight>;
-  font-style: normal;
-}
-
-
 #homebutton {
   text-decoration: none;
   color: white;
+  size: 20px;
 }
 
 /* Adjust margin for mobile versions */
@@ -56,7 +49,7 @@ nav {
 
   #name{
     color: white;
-    font-size: 20px;
+    font-size: 16px;
     margin-left: 10px;
   }
 
